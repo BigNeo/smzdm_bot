@@ -6,7 +6,8 @@ on:
     workflows: ["Build image"]
     types:
       - completed
-
+schedule:
+  - cron: "30 1 * * *"
 jobs:
   run:
     runs-on: ubuntu-latest
