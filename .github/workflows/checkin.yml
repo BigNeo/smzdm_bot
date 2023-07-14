@@ -5,9 +5,9 @@ on:
   workflow_run:
     workflows: ["Build image"]
     types:
-      - completed
-schedule:
-  - cron: "0 23 * * *"
+      - completed:
+  schedule:
+      - cron: '0 23 * * *'
 jobs:
   run:
     runs-on: ubuntu-latest
